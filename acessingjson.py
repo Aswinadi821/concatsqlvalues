@@ -12,8 +12,8 @@ def getvalueofdirectors():
 
 
 def concatsqlfile(x,sqlfile):
-     sql=(""" WHERE directors = '%s' directors_rating = 5 """%(x[0]))
-     sql2=(""" WHERE directors = '%s' directors_rating = 3 """ %(x[1]))
+     sql=("""SELECT * FROM movie WHERE directors = '%s' directors_rating = 5 """%(x[0]))
+     sql2=("""SELECT * FROM movie WHERE directors = '%s' directors_rating = 3 """ %(x[1]))
      print(sql)
      print(sql2)
 
